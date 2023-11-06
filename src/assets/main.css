@@ -1,2 +1,4 @@
-/* Noemolize */
-@import "./base/normolize.scss"
+/*  */
+@import "./base/normolize.scss";
+@import "./base/general.scss";
+@import "./base/fonts.scss"
