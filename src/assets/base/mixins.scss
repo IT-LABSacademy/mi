@@ -1,0 +1,10 @@
+$white: #ffffff;
+$black: #000000;
+$brand-orange: #FF4C0D;
+$brand-white: #F1F1F1;
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
