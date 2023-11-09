@@ -26,7 +26,7 @@ export default {
 
   &.white {
     background: $brand-white;
-    transition: 0.3s;
+    transition: 0.2s;
 
     &:hover {
       background: $brand-orange;
