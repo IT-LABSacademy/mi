@@ -1,8 +1,12 @@
 <template>
-  <div class="container">
-    <!-- <h1>Hello</h1>   -->
-  </div>
+  <FAQ />
 </template>
 
 <script>
+import FAQ from '../components/home/FAQ.vue';
+export default {
+  components: {
+    FAQ,
+  }
+}
 </script>

@@ -12,7 +12,9 @@ import InfoView from './components/InfoView.vue';
 export default {
   components: {
     theNavbar,
-    InfoView
+    InfoView,
+   
+  }
 }
-}
+
 </script>
