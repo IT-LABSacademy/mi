@@ -11,7 +11,4 @@
 
 
 <style lang="scss">
-.home {
-  padding: 300px 0;
-}
 </style>
