@@ -1,8 +1,17 @@
 <template>
-  <div class="container">
-    <!-- <h1>Hello</h1>   -->
-  </div>
+  <section class="home">
+    <div class="container">
+      
+    </div>
+  </section>
 </template>
 
 <script>
 </script>
+
+
+<style lang="scss">
+.home {
+  padding: 300px 0;
+}
+</style>

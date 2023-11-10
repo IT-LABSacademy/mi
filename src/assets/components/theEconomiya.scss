@@ -1,0 +1,130 @@
+.economiya {
+  padding: 100px 0;
+  .container {
+    h1 {
+      color: #f1f1f1;
+      font-size: 45px;
+      font-family: "G-500", sans-serif;
+
+      @media (max-width: 897px) {
+        font-size: 38px;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 25px;
+      }
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 40px;
+      flex-wrap: wrap;
+
+      @media (max-width: 850px) {
+        gap: 300px;
+      }
+      .text-card {
+        margin-top: 50px;
+        width: 360px;
+        height: 183px;
+        color: #f1f1f1;
+
+        h2 {
+          font-size: 20px;
+          font-family: "G-600", sans-serif;
+          border-bottom: 3px solid #ff4c0d;
+          color: #f1f1f1;
+        }
+
+
+        p {
+          font-size: 14px;
+          font-family: "G-400", sans-serif;
+          margin-top: 20px;
+
+          @media (max-width: 400px) {
+            font-size: 12px;
+          }
+        }
+
+        .white-title {
+          color: #f1f1f165;
+          border-bottom: 3px solid #f1f1f165;
+        }
+
+        .orange {
+          border-bottom: 3px solid #ff4c0d;
+          color: #f1f1f1;
+        }
+
+        .gray-text {
+          color: #f1f1f165;
+
+        }
+        .white-text {
+          color: #f1f1f1;
+        }
+      }
+    }
+    .images {
+      margin-top: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 80px;
+
+      .img-1 {
+        border-radius: 15px;
+
+        @media (max-width: 850px) {
+          width: 560px;
+          height: 350px;
+          margin-top: -1100px;
+        }
+
+        @media (max-width: 400px) {
+          width: 300px;
+          margin-left: -8px;
+        }
+      }
+      .img-2 {
+        border-radius: 15px;
+
+        @media (max-width: 900px) {
+          display: none;
+        }
+      }
+
+      .media-img-1 {
+        display: none;
+
+        @media (max-width: 850px) {
+          display: block;
+          margin-left: -640px;
+          margin-top: -580px;
+        }
+
+        @media (max-width: 400px) {
+          width: 300px;
+          margin-left: -378px;
+        }
+      }
+
+      .media-img-2 {
+        display: none;
+
+        @media (max-width: 850px) {
+          display: block;
+          margin-left: -640px;
+          margin-top: -60px;
+        }
+
+        @media (max-width: 400px) {
+          width: 300px;
+          margin-left: -378px;
+        }
+      }
+    }
+  }
+}
