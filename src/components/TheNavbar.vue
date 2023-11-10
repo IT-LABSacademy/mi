@@ -39,11 +39,11 @@
 </template>
 
 <script>
-import TheButton from './TheButton.vue';
+import TheButton from "./TheButton.vue";
 
 export default {
   components: {
-    TheButton
+    TheButton,
   },
   data() {
     return {
