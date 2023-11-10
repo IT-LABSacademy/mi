@@ -1,4 +1,13 @@
 <template>
+<<<<<<< HEAD
+     <RouterView />
+</template>
+
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+</script>
+
+=======
   <TheNavbar />
   <RouterView />
 </template>
@@ -13,3 +22,4 @@ export default {
   }
 }
 </script>
+>>>>>>> 92007e25f128fdda53fcf2f7cf5afeb42193c28d
