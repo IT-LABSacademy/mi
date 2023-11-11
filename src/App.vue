@@ -1,7 +1,7 @@
 <template>
   <TheNavbar />
   <RouterView />
-  <TheEconomiya/>
+  <TheEconomiya />
 </template>
 
 <script>
@@ -12,7 +12,7 @@ import TheEconomiya from './components/TheEconomiya.vue';
 export default {
   components: {
     TheNavbar,
-    TheEconomiya
-}
+    TheEconomiya,
+  }
 }
 </script>
