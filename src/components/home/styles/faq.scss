@@ -1,0 +1,131 @@
+@import "../../../assets/base/mixins.scss";
+
+.acardion {
+  .container {
+    padding-top: 220px;
+    padding-bottom: 100px;
+
+    .wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin: 20px 0;
+      gap: 30px;
+
+      @media (max-width: 1000px) {
+        flex-wrap: wrap;
+        gap: 0;
+      }
+
+      //   left
+      .left {
+        .faq {
+          h1 {
+            color: $brand-orange;
+            font-size: 45px;
+            font-family: "G-500", sans-serif;
+            line-height: 49px;
+            width: 415px !important;
+
+            @media(max-width: 435px) {
+                font-size: 38px;
+            }
+          }
+        }
+
+        .scooterMI {
+          .text {
+            padding-top: 25px;
+            padding-bottom: 60px;
+            p {
+              font-size: 14px;
+              font-family: "G-400", sans-serif;
+              max-width: 360px;
+              line-height: 21px;
+              color: $brand-white;
+              padding: 10px 0;
+            }
+          }
+        }
+      }
+      // right
+      .accordion {
+        width: 100%;
+        max-width: 650px;
+        overflow: hidden;
+        color: $white;
+        font-family: "G-600", sans-serif;
+
+        @media (max-width: 1000px) {
+          margin-left: auto;
+        }
+
+        .adn {
+          padding: 20px;
+
+          .title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+
+            p {
+              cursor: pointer;
+            }
+
+            .accordion__label {
+              display: block;
+              cursor: pointer;
+              font-size: 20px;
+              line-height: 24px;
+              flex-wrap: wrap;
+            }
+          }
+
+          .border {
+            border: 3px solid $brand-orange;
+            width: 100px;
+            border-radius: 3px;
+            margin: 20px 0;
+          }
+
+          .accordion__content {
+            width: 100%;
+            max-width: 600px;
+            line-height: 1.6;
+            font-size: 14px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1134px) {
+}
+
+@media (max-width: 717px) {
+  .acardion {
+    .container {
+      .faq {
+        h1 {
+          font-size: 30px;
+        }
+      }
+
+      .scooterMI {
+        .text {
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+      .btn {
+        .question {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

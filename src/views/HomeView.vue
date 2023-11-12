@@ -1,11 +1,12 @@
 <template>
-  <section class="home">
-    <div class="container">
-
-    </div>
-  </section>
+  <FAQ/>
 </template>
 
 <script>
+import FAQ from '../components/home/FAQ.vue'
+export default {
+  components: {
+    FAQ
+  }
+}
 </script>
-<style lang="scss"></style>
