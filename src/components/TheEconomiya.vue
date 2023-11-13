@@ -53,13 +53,6 @@ export default {
         }
     },
     methods: {
-        activeLine() {
-            if (this.orangeLine = true ) {}
-        },
-
-        activeText() {
-            if (this.whiteText = true) {}
-        },
         activeCard(index) {
             this.cardArray[index].orangeLine = !this.cardArray[index].orangeLine
             this.cardArray[index].whiteText = !this.cardArray[index].whiteText
