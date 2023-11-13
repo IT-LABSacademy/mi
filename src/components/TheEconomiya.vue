@@ -27,8 +27,6 @@
 export default {
     data() {
         return {
-            orangeLine: false,
-            whiteText: false,
             cardArray: [
                 {
                     title: 'Три режима скорости',
