@@ -1,12 +1,12 @@
 <template>
-  <FAQ/>
+  <FAQ />
 </template>
 
 <script>
-import FAQ from '../components/home/FAQ.vue'
+import FAQ from '../components/home/FAQ.vue';
 export default {
   components: {
-    FAQ
-  }
+    FAQ,
+}
 }
 </script>
