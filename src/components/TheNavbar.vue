@@ -53,7 +53,7 @@ export default {
       windowWidth: '',
       menuArray: [
         {
-          name: 'О продукте'
+          name: 'o продукте'
         },
         {
           name: 'Внешний вид'

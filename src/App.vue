@@ -2,18 +2,20 @@
   <TheNavbar />
   <InfoView />
   <RouterView />
+  <TheEconomiya />
 </template>
 
 <script>
 import { RouterView } from 'vue-router'
-import theNavbar from './components/TheNavbar.vue';
+import TheNavbar from './components/TheNavbar.vue';
 import InfoView from './components/InfoView.vue';
+import TheEconomiya from './components/TheEconomiya.vue';
 
 export default {
   components: {
-    theNavbar,
+    TheNavbar,
     InfoView,
-   
+    TheEconomiya,
   }
 }
 

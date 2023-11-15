@@ -1,6 +1,10 @@
 @import '../../../assets/base/mixins.scss';
 
 .acardion {
+
+  background: url(@/assets/images/orange-effect.svg) no-repeat left bottom / contain;
+
+
   .container {
     padding-top: 220px;
     padding-bottom: 100px;
@@ -12,20 +16,24 @@
       margin: 20px 0;
       gap: 30px;
 
-      @media(max-width: 1000px) {
+      @media (max-width: 1000px) {
         flex-wrap: wrap;
         gap: 0;
       }
 
-      // left
+      //   left
       .left {
         .faq {
           h1 {
             color: $brand-orange;
             font-size: 45px;
-            font-family: 'G-500', sans-serif;
-            width: 415px !important;
+            font-family: "G-500", sans-serif;
             line-height: 49px;
+            width: 415px !important;
+
+            @media(max-width: 435px) {
+              font-size: 38px;
+            }
           }
         }
 
