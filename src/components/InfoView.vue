@@ -1,42 +1,102 @@
 <template>
-    <section class="Information">
+    <section class="information">
         <div class="container">
             <h1>Заботится о вашей безопасности</h1>
             <div class="list-wrapper">
-                <div class="card">
-                    <h2>Яркие ходовые огни</h2>
+                <div class="card" v-for="(card, index) in infoArray" :key="card" @click="activeTab(index)"
+                    :class="{ active: card.active }">
+                    <h2>{{ card.title }}</h2>
                     <hr>
-                    <p>Продуманный угол рассеивания света позволяет сохранять хорошую видимость, не ослепляя других участников движения.</p>
-                </div>
-                <div class="card2" >
-                    <h2>Двойная тормозная система</h2>
-                    <hr>
-                    <p>При нажатии наручку тормоза системы переднего и заднего колеса активируются последовательно, сокращая тормозной путь и обеспечивая безопасную и плавную остановку.</p>
-                </div>
-                <div class="card3">
-                    <h2>Яркая задняя фара</h2>
-                    <hr>
-                    <p>При включении ходовых огней задняя фара включается автоматически. При нажатии на ручку тормоза она начинает мигать, предупреждая других участников движения.
-                    </p>
-                </div>
-                <div class="card4">
-                    <h2>Отражатели спереди, сбоку и сзади</h2>
-                    <hr>
-                    <p>Улучшенные отражатели, размещенные с четырех сторон, делают вашу поездку в темное время суток безопаснее.
-                    </p>
+                    <p>{{ card.text }}</p>
+                    
                 </div>
             </div>
-            <div class="images">
-                <img class="scooter1" src="../assets/images/Rectangle 23.png" alt="">
-                <img class="scooter2" src="../assets/images/Rectangle 24.png" alt="">
+            <div class="images" :class="{active: index === tabIndex}" v-for="(image, index) in infoArray" :key="image">
+            <img class="scooter1" :src="image.image1" alt="">
+            <img class="scooter2" :src="image.image2" alt="">
             </div>
-        
+            <!-- <div class="media-images">
+                 <img class="media-scooter1" :src="image.image3" alt="">
+                 <img class="media-scooter2" :src="image.image2" alt="">
+            </div> -->
         </div>
     </section>
 </template>
-<script>
 
+<script>
+import image1 from '../assets/images/Rectangle 23.png'
+import image2 from '../assets/images/Rectangle 24.png'
+import image3 from '../assets/images/brakes.png'
+// import image1 from '../assets/images/Rectangle 23.png'
+
+export default {
+    data() {
+        return {
+            tabIndex: 0,
+            infoArray: [
+                {
+                    title: 'Яркие ходовые огни 1',
+                    text: 'Продуманный угол рассеивания света позволяет сохранять хорошую видимость, не ослепляя других участников движения.',
+                    active: true,
+                    image1: image1,
+                    image2: image2,
+                },
+                {
+                    title: 'Яркие ходовые огни 2',
+                    text: 'Продуманный угол рассеивания света позволяет сохранять хорошую видимость, не ослепляя других участников движения.',
+                    active: false,
+                    image1: image3,
+                    image2: image2,
+                },
+                {
+                    title: 'Яркие ходовые огни 3',
+                    text: 'Продуманный угол рассеивания света позволяет сохранять хорошую видимость, не ослепляя других участников движения.',
+                    active: false,
+                    image1: image1,
+                    image2: image2,
+                },
+                {
+                    title: 'Яркие ходовые огни 4',
+                    text: 'Продуманный угол рассеивания света позволяет сохранять хорошую видимость, не ослепляя других участников движения.',
+                    active: false,
+                    image1: image1,
+                    image2: image2,
+                },
+            ]
+        }
+    },
+    methods: {
+        activeTab(index) {
+            this.tabIndex = index
+            this.infoArray[index].active = !this.infoArray[index].active
+            console.log(index)
+
+            if (index === 1) {
+                this.infoArray[1].active = true
+                this.infoArray[2].active = false
+                this.infoArray[3].active = false
+            }
+            
+            if (index === 2) {
+                this.infoArray[1].active = true
+                this.infoArray[2].active = true
+                this.infoArray[3].active = false
+            }
+            
+            if (index === 3) {
+                this.infoArray[1].active = true
+                this.infoArray[2].active = true
+            }
+
+            if (index === 0) {
+                this.infoArray.forEach(item => item.active = false)
+            }
+        }
+    }
+}
 
 </script>
-<style>
-@import url('../assets/components/theInfo.scss');</style>
+
+<style lang="scss" scoped>
+@import '../assets/components/theInfo.scss';
+</style>
