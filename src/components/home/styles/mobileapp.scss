@@ -1,0 +1,100 @@
+@import "../../../assets/base/mixins.scss";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.mobile-app {
+  max-width: 100%;
+
+  .container {
+    max-width: 1160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 631px) {
+      display: block;
+      flex-wrap: wrap;
+    }
+
+    .left {
+      h1 {
+        max-width: 525px;
+        font-family: "G-500";
+        font-size: 45px;
+        color: $brand-orange;
+        line-height: 50px;
+
+        @media (max-width: 631px) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 40px;
+        }
+      }
+
+      p {
+        max-width: 360px;
+        margin: 35px 0 50px;
+        font-family: "G-400", sans-serif;
+        font-size: 14px;
+        line-height: 21px;
+        color: $brand-white;
+
+        @media (max-width: 631px) {
+          max-width: 630px;
+          margin: 35px 0 30px;
+        }
+      }
+
+      .btns {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        @media (max-width: 631px) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        button {
+          width: 135px;
+          height: 40px;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: $brand-white;
+          color: $black;
+          border-radius: 6px;
+          padding: 2px 5px;
+
+          img {
+            width: 18.42px;
+            height: 22.64px;
+          }
+        }
+      }
+    }
+
+    // Right
+    .right {
+      .img {
+        img {
+          @media (max-width: 831px) {
+            max-width: 300px;
+          }
+
+          @media (max-width: 631px) {
+            display: flex;
+            margin: 50px auto 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+@import "../../../assets/base/mixins.scss";
+
+.shop {
+  background: url(../../../assets/images/bg-black.svg);
+  margin-top: 150px;
+
+  .container {
+    max-width: 1160px;
+    display: flex;
+    justify-content: center;
+
+    .buy-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 999;
+      width: 1160px;
+      height: 550px;
+      border-radius: 15px;
+      background: #222222;
+      padding: 60px;
+
+      @media (max-width: 655px) {
+        height: 800px;
+      }
+
+      .left {
+        h1 {
+          max-width: 495px;
+          color: $brand-white;
+          font-family: "G-400", sans-serif;
+          font-size: 45px;
+          margin-bottom: 315px;
+
+          @media (max-width: 655px) {
+            max-width: 400px;
+            font-size: 35px;
+            margin-bottom: 590px;
+          }
+
+          span {
+            color: $brand-orange;
+            font-family: "G-600", sans-serif;
+            font-size: 30px;
+            line-height: 36px;
+          }
+        }
+      }
+
+      .right {
+        ul {
+          position: absolute;
+          color: $brand-white;
+          top: 50px;
+          right: 60px;
+
+          @media (max-width: 900px) {
+            top: 170px;
+            left: 60px;
+          }
+
+          @media (max-width: 655px) {
+            top: 440px;
+          }
+
+          h2 {
+            font-size: 24px;
+          }
+
+          li {
+            font-family: "G-400", sans-serif;
+            line-height: 30px;
+          }
+        }
+
+        img {
+          position: absolute;
+          display: flex;
+          z-index: -99;
+          top: -140px;
+          right: 0;
+          width: 766px;
+          height: 760px;
+
+          @media (max-width: 900px) {
+            max-width: 366px;
+            height: 360px;
+            top: 140px;
+          }
+
+          @media (max-width: 655px) {
+            top: 100px;
+            left: 0;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}

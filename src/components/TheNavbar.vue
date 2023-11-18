@@ -6,6 +6,7 @@
         <div class="logo">
           <img src="../assets/images/logo.svg" alt="logo">
         </div>
+        
 
         <!-- menu -->
         <ul class="menu">
@@ -36,6 +37,7 @@
     </div>
 
   </header>
+
 </template>
 
 <script>
@@ -51,7 +53,7 @@ export default {
       windowWidth: '',
       menuArray: [
         {
-          name: 'О продукте'
+          name: 'o продукте'
         },
         {
           name: 'Внешний вид'
@@ -84,4 +86,5 @@ export default {
 
 <style lang="scss">
 @import '../assets/components/theNavbar.scss';
+
 </style>
