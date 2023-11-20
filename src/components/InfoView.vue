@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <section class="information">
         <div class="container">
             <h1>Заботится о вашей безопасности</h1>
@@ -17,7 +17,7 @@
 
         </div>
     </section>
-</template>
+</template> -->
 
 <script>
 import image1 from '../assets/images/Rectangle 23.png'
@@ -93,6 +93,6 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<!-- <style lang="scss" scoped>
 @import '../assets/components/theInfo.scss';
-</style>
+</style> -->

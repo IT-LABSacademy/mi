@@ -10,6 +10,18 @@ body {
   background: url(../images/orange-effect.svg) no-repeat ;
 }
 
+.header {
+  background: url(../images/header-effect.png) no-repeat right / contain;
+}
+
+section {
+  .container{
+    .leeft{
+      padding: 150px 0;
+      background: url(../images/white-scooter.png) no-repeat center;
+    }
+  }
+}
 .container {
   width: 100%;
   max-width: 1200px;
