@@ -1,0 +1,33 @@
+@import "../../../assets/base/mixins.scss";
+
+.footer {
+  margin-top: 50px;
+  height: 100px;
+  background: url(../../../assets/images/bg-black.svg);
+
+  .container {
+    max-width: 1140px;
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 570px) {
+        display: block;
+        flex-wrap: wrap;
+        margin: 0 auto;
+      }
+
+      ul {
+        li {
+          color: $brand-white;
+          font-family: "G-400", sans-serif;
+          font-size: 14px;
+          line-height: 21px;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
