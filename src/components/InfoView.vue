@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <section class="information">
         <div class="container">
             <h1>Заботится о вашей безопасности</h1>
@@ -15,13 +15,13 @@
             <img class="scooter1" :src="image.image1" alt="">
             <img class="scooter2" :src="image.image2" alt="">
             </div>
-            <!-- <div class="media-images">
+            <div class="media-images">
                  <img class="media-scooter1" :src="image.image3" alt="">
                  <img class="media-scooter2" :src="image.image2" alt="">
-            </div> -->
+            </div>
         </div>
     </section>
-</template>
+</template> -->
 
 <script>
 import image1 from '../assets/images/Rectangle 23.png'
@@ -76,13 +76,13 @@ export default {
                 this.infoArray[2].active = false
                 this.infoArray[3].active = false
             }
-            
+
             if (index === 2) {
                 this.infoArray[1].active = true
                 this.infoArray[2].active = true
                 this.infoArray[3].active = false
             }
-            
+
             if (index === 3) {
                 this.infoArray[1].active = true
                 this.infoArray[2].active = true
@@ -97,6 +97,6 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<!-- <style lang="scss" scoped>
 @import '../assets/components/theInfo.scss';
-</style>
+</style> -->

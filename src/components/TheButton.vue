@@ -23,10 +23,23 @@ export default {
   padding: 15px 35px;
   font-family: 'G-700', sans-serif;
   border-radius: 65px;
+  &.black {
+    background: #222222;
+    color: $brand-white;
+    transition: 0.2s;
+
+    &:hover {
+      background: $white;
+      color: $black;
+      box-shadow: 0 0 3px $brand-white;
+    }
+  }
 
   &.white {
     background: $brand-white;
     transition: 0.2s;
+
+
 
     &:hover {
       background: $brand-orange;

@@ -1,0 +1,52 @@
+@import '../../../assets/base/mixins.scss';
+
+section {
+    .container {
+        padding-top: 40px;
+        .leeft{
+            .item-text{
+                h1 {
+                    font-size: 50px;
+                    font-family: 'G-600', sans-serif;
+                    color: $brand-white;
+                    max-width: 700px;
+                }
+            }
+            .p-text {
+                padding: 40px 0;
+                p {
+                    font-size: 25px;
+                    font-family: "G-600", sans-serif;
+                    color: $brand-orange;
+                    width: 300px;
+                }
+            }
+            .btnn {
+                border: 3px solid #fff;
+                background: #222222;
+                border-radius: 108px;
+                width: 231px;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    section {
+        .container {
+            .leeft {
+                .item-text{
+                    h1 {
+                        font-size: 40px;
+                        flex-wrap: wrap;
+                    }
+                }
+                .p-text {
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
