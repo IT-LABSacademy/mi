@@ -1,19 +1,26 @@
 @import '../../../assets/base/mixins.scss';
 
-section {
+.sectionn {
+    background: url(@/assets/images/white-scooter.png) no-repeat top right / contain;
+
     .container {
         padding-top: 40px;
-        .leeft{
-            .item-text{
+
+        .leeft {
+            padding: 150px 0;
+
+            .item-text {
                 h1 {
-                    font-size: 50px;
+                    font-size: 80px;
                     font-family: 'G-600', sans-serif;
                     color: $brand-white;
-                    max-width: 700px;
+                    max-width: 1050px;
                 }
             }
+
             .p-text {
                 padding: 40px 0;
+
                 p {
                     font-size: 25px;
                     font-family: "G-600", sans-serif;
@@ -21,6 +28,7 @@ section {
                     width: 300px;
                 }
             }
+
             .btnn {
                 border: 3px solid #fff;
                 background: #222222;
@@ -32,15 +40,18 @@ section {
 }
 
 @media (max-width: 800px) {
-    section {
+    .sectionn {
         .container {
             .leeft {
-                .item-text{
+                padding: 90px 0;
+
+                .item-text {
                     h1 {
                         font-size: 40px;
                         flex-wrap: wrap;
                     }
                 }
+
                 .p-text {
                     p {
                         font-size: 18px;

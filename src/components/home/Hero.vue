@@ -1,6 +1,3 @@
-
-@import TheButton from '../TheButton.vue';
-
 <template>
   <!-- section -->
   <section class="sectionn" id="bg">
@@ -10,7 +7,7 @@
       <div class="leeft">
         <!-- texts -->
         <div class="item-text">
-          <h1>Стильный электросамокатс мощным аккумулятором</h1>
+          <h1>Стильный электросамокат с мощным аккумулятором</h1>
         </div>
         <div class="p-text">
           <p>
@@ -20,7 +17,7 @@
         </div>
         <!-- button || white && black -->
         <label class="switch" onclick="change()">
-          <input type="checkbox"/>
+          <input type="checkbox" />
           <span class="slider round"></span>
         </label>
         <!-- <div class="btnn">
@@ -37,30 +34,30 @@
 import TheButton from "../TheButton.vue";
 
 export default {
-    components: {
-        TheButton,
-    },
-    
+  components: {
+    TheButton,
+  },
+
 };
 </script>
 
 
 <script setup>
 
-function change () {
-  document.getElementById("bg").style.backgroundImage="url(black-scooter.png)";
+function change() {
+  document.getElementById("bg").style.backgroundImage = "url(black-scooter.png)";
 }
 
 </script>
 
 
 <style lang="scss" scoped>
-@import "./styles/header.scss";
+@import "./styles/hero.scss";
 </style>
 
 
 
-<style>
+<style scoped>
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -101,15 +98,15 @@ function change () {
   transition: .4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #f0f0f0;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #2196F3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(76px);

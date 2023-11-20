@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <section class="information">
         <div class="container">
             <h1>Заботится о вашей безопасности</h1>
@@ -21,12 +21,12 @@
             </div>
         </div>
     </section>
-</template> -->
+</template>
 
 <script>
-import image1 from '../assets/images/Rectangle 23.png'
-import image2 from '../assets/images/Rectangle 24.png'
-import image3 from '../assets/images/brakes.png'
+import image1 from '../../assets/images/Rectangle 23.png'
+import image2 from '../../assets/images/Rectangle 24.png'
+import image3 from '../../assets/images/brakes.png'
 // import image1 from '../assets/images/Rectangle 23.png'
 
 export default {

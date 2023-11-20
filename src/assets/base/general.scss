@@ -4,27 +4,17 @@ body {
   font-family: 'G-400', sans-serif;
   font-weight: 400;
   background-image: url(../images/bg-black.svg);
+  overflow-x: hidden;
 }
 
 .acardion {
-  background: url(../images/orange-effect.svg) no-repeat ;
+  background: url(../images/orange-effect.svg) no-repeat;
 }
 
-.header {
-  background: url(../images/header-effect.png) no-repeat right / contain;
-}
-
-section {
-  .container{
-    .leeft{
-      padding: 150px 0;
-      background: url(../images/white-scooter.png) no-repeat center;
-    }
-  }
-}
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  overflow-x: hidden;
 }

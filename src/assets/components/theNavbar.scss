@@ -2,11 +2,14 @@
 
 .header {
   padding: 40px 0;
+
   
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 10;
 
     .left {
       @include flex;
