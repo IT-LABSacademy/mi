@@ -9,19 +9,19 @@ export default {
   props: {
     color: {
       type: String,
-      required: true
+      required: true,
     },
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/base/mixins.scss';
+@import "../assets/base/mixins.scss";
 
 .btn {
   font-size: 16px;
   padding: 15px 35px;
-  font-family: 'G-700', sans-serif;
+  font-family: "G-700", sans-serif;
   border-radius: 65px;
 
   &.white {
